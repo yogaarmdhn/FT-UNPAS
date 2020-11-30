@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'product-sans';
+    src: url('assets/fonts/Product_Sans_Regular.ttf');
+}
+
+.container {
+    margin: 0 auto;
+    width: 900px;
+    height: 100%;
+    font-family: 'product-sans';
+}
+
+.header {
+    background-color: #0E2D43;
+    padding: 20px 20px 65px;
+    border-radius: 600px;
+}
+
+.logo {
+    width: 150px;
+    float: left;
+    margin-left: 20px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.links {
+    float: right;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.content {
+    padding: 0 40px 20px;
+}
+
+.tentang {
+    margin-bottom: 50px;
+}
+
+.program {
+    margin-bottom: 50px;
+}
+
+.list-prodi {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prodi {
+    width: 100px;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.prodi img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: relative;
+    transition: all .3s ease;
+}
+
+.prodi p {
+    width: 100%;
+    position: absolute;
+    font-size: 20px;
+    opacity: 0;
+    z-index: 1500;
+    transition: ass .5s ease;
+    bottom: -80px;
+}
+
+.prodi:hover img {
+    border: 5px solid black;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 5);
+    z-index: 1000;
+    transform: scale(1.3);
+    filter: sepia(100%);
+    opacity: 50%;
+}
+
+.prodi:hover p {
+    opacity: 1;
+    bottom: -10px;
+}
+
+.prodi1 {
+    order: 3;
+}
+
+.prodi2 {
+    order: 1;
+}
+
+.prodi3 {
+    order: 2;
+}
+
+.prodi4 {
+    order: 5;
+}
+
+.prodi5 {
+    order: 6;
+}
+
+.prodi6 {
+    order: 4;
+}
